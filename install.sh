@@ -35,7 +35,6 @@ confirm_password () {
 sudo loadkeys us
 
 # Check boot mode
-[[ ! -d /sys/firmware/efi ]] && printf "Not booted in UEFI mode. Aborting..." && exit 1
 
 # Choose disk
 while :
