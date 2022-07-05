@@ -30,7 +30,7 @@ fi
 
 cfdisk
 mkfs.ext4 /dev/sda1
-mount /dev/sda /mnt
+mount /dev/sda1 /mnt
 
 [[ $(grep 'vendor' /proc/cpuinfo) == *"Intel"* ]] && ucode="intel-ucode"
 [[ $(grep 'vendor' /proc/cpuinfo) == *"Amd"* ]] && ucode="amd-ucode"
